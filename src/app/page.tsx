@@ -1,11 +1,5 @@
 import PostCard from "@/components/PostCard";
 
-interface Post {
-  id: number
-  title: string
-  body: string
-}
-
 const fetchPosts = async (): Promise<Post[]> => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users/1/posts")
 
@@ -18,7 +12,6 @@ const fetchPosts = async (): Promise<Post[]> => {
 
 export default async function Home() {
   const posts = await fetchPosts()
-  console.log("posts:",posts)
 
   return (
     <main>
