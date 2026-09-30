@@ -1,8 +1,3 @@
-// interface PostCardProps {
-//   title: string,
-//   author: string,
-// }
-
 export default function PostCard({
   title,
   author,
